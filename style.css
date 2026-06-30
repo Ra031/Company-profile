@@ -131,11 +131,91 @@ nav a:hover {
 }
 
 /* Footer */
+/* --- Pembaruan Style Footer --- */
 footer {
-    text-align: center;
-    padding: 20px;
-    background: #1a1a1a;
+    background: #16161a;
+    padding: 50px 5% 20px 5%;
+    border-top: 3px solid #ff0055;
+    color: #fff;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-section {
+    flex: 1;
+    min-width: 280px;
+}
+
+.footer-section h3 {
+    font-size: 20px;
+    color: #ff0055;
+    margin-bottom: 15px;
+}
+
+.footer-section p {
+    color: #aaa;
     font-size: 14px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+/* Tombol WhatsApp */
+.wa-btn {
+    display: inline-block;
+    background: #25D366;
+    color: #fff;
+    padding: 12px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: 0.3s;
+    font-size: 15px;
+}
+
+.wa-btn:hover {
+    background: #20ba5a;
+    box-shadow: 0 4px 15px rgba(37, 211, 102, 0.4);
+}
+
+/* Ikon Media Sosial */
+.social-icons {
+    display: flex;
+    gap: 15px;
+}
+
+.social-icons a {
+    color: #fff;
+    background: #2a2a35;
+    width: 45px;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 20px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.social-icons a:hover {
+    background: #ff0055;
+    transform: translateY(-5px);
+}
+
+/* Hak Cipta Bawah */
+.footer-bottom {
+    text-align: center;
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid #2a2a35;
+    font-size: 13px;
     color: #666;
 }
 
