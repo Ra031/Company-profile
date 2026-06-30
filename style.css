@@ -241,3 +241,107 @@ footer {
     /* Efek opsional: memberi sedikit kilauan lampu neon pada teks logo */
     text-shadow: 0 0 10px rgba(255, 0, 85, 0.3); 
 }
+/* --- 1. Pengaturan untuk Layar Tablet & HP (Lebar Maksimal 768px) --- */
+@media screen and (max-width: 768px) {
+    /* Navbar */
+    header {
+        flex-direction: column; /* Menyusun logo dan menu ke bawah */
+        gap: 15px;
+        padding: 15px 5%;
+        text-align: center;
+    }
+    
+    nav {
+        display: flex;
+        flex-wrap: wrap; /* Menu otomatis turun ke bawah jika layar terlalu sempit */
+        justify-content: center;
+        gap: 10px;
+    }
+    
+    nav a {
+        margin-left: 0;
+        margin: 0 10px;
+        font-size: 15px;
+    }
+    
+    .btn-theme {
+        margin-left: 5px;
+    }
+
+    /* Hero Section */
+    .hero {
+        height: auto;
+        padding: 80px 20px;
+    }
+    
+    .hero-text h1 {
+        font-size: 32px; /* Memperkecil ukuran font judul di HP agar tidak terpotong */
+    }
+    
+    .hero-text p {
+        font-size: 16px;
+    }
+
+    /* Statistik Konten (Angka Berjalan) */
+    .stats-section {
+        flex-direction: column; /* Menyusun angka statistik ke bawah di HP */
+        gap: 30px;
+        padding: 40px 20px;
+    }
+
+    /* Bagian Footer */
+    .footer-container {
+        flex-direction: column; /* Kolom kiri dan kanan berbaris ke bawah */
+        text-align: center;
+        gap: 30px;
+    }
+
+    .social-icons {
+        justify-content: center; /* Merapikan logo sosmed ke tengah layar HP */
+    }
+}
+
+/* --- 2. Pengaturan khusus untuk Layar HP Kecil (Lebar Maksimal 480px) --- */
+@media screen and (max-width: 480px) {
+    .logo {
+        font-size: 22px; /* Ukuran tulisan logo lebih pas untuk HP */
+    }
+    
+    nav a {
+        font-size: 13px; /* Memperkecil menu navigasi */
+    }
+
+    .card {
+        width: 100%; /* Kartu layanan akan melebar penuh mengikuti lebar layar HP */
+    }
+
+    .gallery-grid {
+        grid-template-columns: 1fr; /* Galeri foto menjadi 1 kolom vertikal ke bawah */
+    }
+    
+    .wa-btn-nego {
+        width: 100%; /* Tombol WhatsApp memenuhi lebar layar agar mudah ditekan jempol */
+        font-size: 15px;
+    }
+
+    /* Dashboard Admin pada HP */
+    .dashboard-container {
+        margin: 10px;
+        padding: 15px;
+    }
+    
+    .dash-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+    
+    /* Membuat tabel CRUD bisa di-geser (scroll) ke samping di HP agar tidak rusak */
+    .manage-box {
+        overflow-x: auto; 
+    }
+    
+    #crudTable {
+        min-width: 500px;
+    }
+}
