@@ -27,14 +27,16 @@
     </div>
 
     <div id="mainDashboard" class="dashboard-container" style="max-width: 800px; display: none;">
-        <header class="dash-header">
-            <div>
+       <header class="dash-header-centered">
+            <div class="user-info-box">
                 <h2>Dashboard Admin</h2>
-                <small style="color: #666;">Login sebagai: <span id="userDisplay" style="color: #ff0055; font-weight: bold;"></span></small>
+                <small style="color: #666; display: block; margin-top: 5px;">
+                    Login sebagai: <span id="userDisplay" style="color: #ff0055; font-weight: bold;"></span>
+                </small>
             </div>
-            <div>
-                <button id="btnLogout" style="background: #444; color: #fff; border: none; padding: 6px 12px; border-radius: 4px; cursor: pointer; margin-right: 10px;">Logout</button>
-                <a href="index.html" class="btn-back">Kembali ke Web</a>
+            <div class="action-buttons-box">
+                <button id="btnLogout" class="btn-logout-dash">Logout</button>
+                <a href="index.html" class="btn-back-dash">Kembali ke Web</a>
             </div>
         </header>
 
